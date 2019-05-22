@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">XKCD</string>
+    <string name="save">SAVE</string>
+    <string name="spend">SPEND</string>
+    <string name="earn">EARN</string>
+    <string name="profile">PROFILE</string>
+    <string name="today">Today</string>
+    <string name="woolworth">Woolworth</string>
+</resources>

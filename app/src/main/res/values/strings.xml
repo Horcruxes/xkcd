@@ -8,4 +8,7 @@
     <string name="future">Coming Up</string>
     <string name="woolworth">Woolworth</string>
     <string name="yesterday">yesterday</string>
+    <string name="balance_title">OK to spend</string>
+    <string name="balance_avarage">about %.2f per day</string>
+
 </resources>

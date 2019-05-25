@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
     var home_view : HomeView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        //Create Home Page
         super.onCreate(savedInstanceState)
         this.home_view = HomeView(this)
         this.setContentView(this.home_view)

@@ -10,7 +10,7 @@ import com.xkcd.dingm.models.XKCDTransaction
 
 class XKCDFutureTransactionsView : RecyclerView {
 
-    var transactions        : MutableList<XKCDTransaction>? = ArrayList<XKCDTransaction>();
+    var transactions : MutableList<XKCDTransaction>? = ArrayList<XKCDTransaction>();
 
     constructor(context: Context) : super(context)
 
@@ -18,7 +18,7 @@ class XKCDFutureTransactionsView : RecyclerView {
         this.layoutParams               = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
         val horizontalLayoutManager     = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         this.layoutManager              = horizontalLayoutManager
-        val activity: MainActivity = context as MainActivity
+        val activity: MainActivity      = context as MainActivity
 
         this.populateTransactions(null)
         this.adapter = XKCDTransactionAdapter(context, this.transactions!!, activity)

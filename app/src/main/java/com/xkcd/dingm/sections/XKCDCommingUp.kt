@@ -10,7 +10,7 @@ import android.support.constraint.ConstraintSet.PARENT_ID
 import com.xkcd.dingm.utils.Constants
 
 
-class XKCDSectionFuture : ConstraintLayout {
+class XKCDCommingUp : ConstraintLayout {
 
     var title   : TextView?                 = null
     var amount  : TextView?                 = null
@@ -32,7 +32,7 @@ class XKCDSectionFuture : ConstraintLayout {
     }
 
     fun setTitle() {
-        this.title!!.setId(Constants.titleId);
+        this.title!!.setId(Constants.coming_up_title_view_id);
         this.title!!.setText(com.xkcd.dingm.R.string.future)
         this.title!!.setPadding(50,50,50,50)
         this.title!!.textSize = 20.0f
@@ -42,7 +42,7 @@ class XKCDSectionFuture : ConstraintLayout {
 
     @SuppressLint("ResourceAsColor")
     fun setAmount() {
-        this.amount!!.setId(Constants.amountId)
+        this.amount!!.setId(Constants.coming_up_amount_view_ie)
         this.amount!!.setTextColor(resources.getColor(R.color.colorTransactionAmount))
         this.amount!!.setText("-$234.45") //TODO: connect with API result
         this.amount!!.setPadding(50,50,50,50)

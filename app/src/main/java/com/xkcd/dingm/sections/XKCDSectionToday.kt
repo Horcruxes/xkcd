@@ -6,7 +6,7 @@ import android.widget.TextView
 import com.xkcd.dingm.R
 import com.xkcd.dingm.components.XKCDCurrentTransactionView
 
-class XKCDSectionCurrent : LinearLayout {
+class XKCDSectionToday : LinearLayout {
 
     var title   : TextView?                     = null
     var content : XKCDCurrentTransactionView?   = null

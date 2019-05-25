@@ -53,7 +53,7 @@ class XKCDFutureTransactionItemView : LinearLayout {
     }
 
     fun updateContent(transaction: XKCDTransaction){
-        val (brand_name, pay_day, amount)    = transaction
+        val (brand_name, pay_day, amount) = transaction
         this.brand_logo!!           .setImageResource(R.drawable.tab_save)
         this.time_in_future!!       .setText(pay_day)
         this.current_transaction!!  .setText(Constants.FORMAT_PRECISION.format(amount))

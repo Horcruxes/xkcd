@@ -9,14 +9,14 @@ import com.xkcd.dingm.models.XKCDTransaction
 
 class XKCDTransactionAdapter : RecyclerView.Adapter<XKCDTransactionViewHolder> {
 
-    var context             : Context?           = null;
+    var context             : Context?                      = null;
     var transactions        : MutableList<XKCDTransaction>? = ArrayList<XKCDTransaction>();
-    var item_click_listener : ItemClickListener? = null
+    var item_click_listener : ItemClickListener?            = null
 
     constructor(context:Context, transactions: MutableList<XKCDTransaction>, listener: ItemClickListener? = null) : super(){
-        this.context            = context
-        this.transactions       = transactions
-        this.item_click_listener  = listener
+        this.context                = context
+        this.transactions           = transactions
+        this.item_click_listener    = listener
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): XKCDTransactionViewHolder {

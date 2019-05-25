@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.xkcd.dingm.R
-import com.xkcd.dingm.Utils.Constants
+import com.xkcd.dingm.utils.Constants
 
 class XKCDCurrentTransactionView : LinearLayout {
     var brand_logo          : ImageView?    = null

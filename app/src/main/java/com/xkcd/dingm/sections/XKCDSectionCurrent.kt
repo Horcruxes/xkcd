@@ -8,7 +8,7 @@ import com.xkcd.dingm.components.XKCDCurrentTransactionView
 
 class XKCDSectionCurrent : LinearLayout {
 
-    var title   : TextView?                 = null
+    var title   : TextView?                     = null
     var content : XKCDCurrentTransactionView?   = null
 
     constructor(context: Context) : super(context)

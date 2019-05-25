@@ -1,4 +1,4 @@
-package com.xkcd.dingm.Adapters
+package com.xkcd.dingm.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
@@ -7,10 +7,10 @@ import com.xkcd.dingm.interfaces.ItemClickListener
 
 class XKCDTransactionViewHolder : RecyclerView.ViewHolder , View.OnClickListener{
 
-    var m_click_listener : ItemClickListener?     = null
+    var click_listener : ItemClickListener?     = null
 
     constructor(itemView: View, listener: ItemClickListener? = null) : super(itemView) {
-        this.m_click_listener = listener
+        this.click_listener = listener
     }
 
     init {
@@ -18,7 +18,7 @@ class XKCDTransactionViewHolder : RecyclerView.ViewHolder , View.OnClickListener
     }
 
     override fun onClick(view: View) {
-        m_click_listener?.onItemClicked(view, this.adapterPosition)
+        click_listener?.onItemClicked(view, this.adapterPosition)
     }
 }
 

@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.xkcd.dingm.R
-import com.xkcd.dingm.Utils.Constants
+import com.xkcd.dingm.utils.Constants
 import com.xkcd.dingm.models.XKCDTransaction
 
 class XKCDFutureTransactionItemView : LinearLayout {
@@ -53,12 +53,10 @@ class XKCDFutureTransactionItemView : LinearLayout {
     }
 
     fun updateContent(transaction: XKCDTransaction){
-        val (brand_name, amount)    = transaction
+        val (brand_name, pay_day, amount)    = transaction
         this.brand_logo!!           .setImageResource(R.drawable.tab_save)
-        this.time_in_future!!       .setText(brand_name)
+        this.time_in_future!!       .setText(pay_day)
         this.current_transaction!!  .setText(Constants.FORMAT_PRECISION.format(amount))
     }
-
-
 }
 

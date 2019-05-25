@@ -7,7 +7,7 @@ import android.widget.TextView
 import com.xkcd.dingm.R
 import android.support.constraint.ConstraintSet
 import android.support.constraint.ConstraintSet.PARENT_ID
-import com.xkcd.dingm.Utils.Constants
+import com.xkcd.dingm.utils.Constants
 
 
 class XKCDSectionFuture : ConstraintLayout {

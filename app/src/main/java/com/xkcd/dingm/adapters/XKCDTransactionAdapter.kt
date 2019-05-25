@@ -1,4 +1,4 @@
-package com.xkcd.dingm.Adapters
+package com.xkcd.dingm.adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -11,23 +11,23 @@ class XKCDTransactionAdapter : RecyclerView.Adapter<XKCDTransactionViewHolder> {
 
     var context             : Context?           = null;
     var transactions        : MutableList<XKCDTransaction>? = ArrayList<XKCDTransaction>();
-    var itemClickListener   : ItemClickListener? = null
+    var item_click_listener : ItemClickListener? = null
 
     constructor(context:Context, transactions: MutableList<XKCDTransaction>, listener: ItemClickListener? = null) : super(){
         this.context            = context
         this.transactions       = transactions
-        this.itemClickListener  = listener
+        this.item_click_listener  = listener
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): XKCDTransactionViewHolder {
         var item = XKCDFutureTransactionItemView(this.context!!)
-        return XKCDTransactionViewHolder(item, this.itemClickListener);
+        return XKCDTransactionViewHolder(item, this.item_click_listener);
     }
 
     override fun onBindViewHolder(holder: XKCDTransactionViewHolder, position: Int) {
-        var itemView : XKCDFutureTransactionItemView = holder.itemView as XKCDFutureTransactionItemView
+        var item_view : XKCDFutureTransactionItemView = holder.itemView as XKCDFutureTransactionItemView
         val transaction = transactions!!.get(position)
-        itemView.updateContent(transaction)
+        item_view.updateContent(transaction)
     }
 
     override fun getItemCount(): Int {

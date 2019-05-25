@@ -1,4 +1,4 @@
-package com.xkcd.dingm.Utils
+package com.xkcd.dingm.utils
 
 object Constants {
     val FORMAT_PRECISION : String = "%.2f"

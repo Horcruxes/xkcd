@@ -1,3 +1,5 @@
 package com.xkcd.dingm.models
+import kotlinx.serialization.*
 
-data class XKCDTransaction (val time_in_future: String = "", val transaction_amout: Double = 0.0)
+@Serializable
+data class XKCDTransaction (val brand: String = "", val pay_day: String = "", val amount: Double = 0.0)

@@ -1,10 +1,11 @@
-package com.xkcd.dingm.sections
+package com.xkcd.dingm.Views
 
 import android.content.Context
 import android.widget.LinearLayout
-import android.widget.TextView
 import com.xkcd.dingm.R
 import com.xkcd.dingm.components.XKCDTabBar
+import com.xkcd.dingm.sections.XKCDSectionCurrent
+import com.xkcd.dingm.sections.XKCDSectionFuture
 
 class HomeView : LinearLayout {
 
@@ -14,10 +15,12 @@ class HomeView : LinearLayout {
         this.layoutParams   = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
         this.orientation    = VERTICAL
 
-        val section_today   = XKCDSectionToday(context)
-        this.addView(section_today)
-
+        val section_future  = XKCDSectionFuture(context)
+        val section_current = XKCDSectionCurrent(context)
         val tab_bar         = XKCDTabBar(context, R.style.XKCDTabStyle)
+
+        this.addView(section_future)
+        this.addView(section_current)
         this.addView(tab_bar)
     }
 

@@ -4,12 +4,12 @@ import android.content.Context
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.xkcd.dingm.R
-import com.xkcd.dingm.components.CurrentTransactionView
+import com.xkcd.dingm.components.XKCDCurrentTransactionView
 
 class XKCDSectionCurrent : LinearLayout {
 
     var title   : TextView?                 = null
-    var content : CurrentTransactionView?   = null
+    var content : XKCDCurrentTransactionView?   = null
 
     constructor(context: Context) : super(context)
 
@@ -17,7 +17,7 @@ class XKCDSectionCurrent : LinearLayout {
         this.orientation    = VERTICAL
 
         this.title          = TextView(context)
-        this.content        = CurrentTransactionView(context)
+        this.content        = XKCDCurrentTransactionView(context)
 
         this.setTitle()
 

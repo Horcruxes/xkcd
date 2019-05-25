@@ -11,7 +11,7 @@ class XKCDTabBar : TabLayout {
     var tab_item_earn       : Tab? = null
     var tab_item_profile    : Tab? = null
 
-    constructor(context: Context, style: Int) : super(context, null, style)
+    constructor(context: Context) : super(context)
 
     init {
         this.tab_item_spend = this.newTab()
@@ -31,6 +31,8 @@ class XKCDTabBar : TabLayout {
         this.addTab(tab_item_save!!)
         this.addTab(tab_item_earn!!)
         this.addTab(tab_item_profile!!)
+
+        this.setSelectedTabIndicatorColor(0)
     }
 
 }

@@ -13,7 +13,7 @@ import com.xkcd.dingm.Utils.Constants
 class XKCDSectionFuture : ConstraintLayout {
 
     var title   : TextView?                 = null
-    var amount  : TextView?                  = null
+    var amount  : TextView?                 = null
 
     constructor(context: Context) : super(context)
 

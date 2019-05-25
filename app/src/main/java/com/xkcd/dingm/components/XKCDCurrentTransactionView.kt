@@ -7,7 +7,7 @@ import android.widget.TextView
 import com.xkcd.dingm.R
 import com.xkcd.dingm.Utils.Constants
 
-class CurrentTransactionView : LinearLayout {
+class XKCDCurrentTransactionView : LinearLayout {
     var brand_logo          : ImageView?    = null
     var brand_name          : TextView?     = null
     var current_transaction : TextView?     = null

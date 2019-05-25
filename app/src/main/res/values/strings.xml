@@ -7,4 +7,5 @@
     <string name="today">Today</string>
     <string name="future">Coming Up</string>
     <string name="woolworth">Woolworth</string>
+    <string name="yesterday">yesterday</string>
 </resources>

@@ -27,6 +27,7 @@ class XKCDSectionToday : LinearLayout {
     }
 
     fun setTitle() {
+        //TODO: Move hard coded number to static configs
         this.title!!.setText(R.string.today)
         this.title!!.textSize = 20.0f
         this.title!!.setPadding(50,50,50,50)

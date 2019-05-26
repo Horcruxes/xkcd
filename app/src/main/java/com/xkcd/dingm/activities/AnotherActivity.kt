@@ -9,6 +9,8 @@ import android.widget.TextView
 class AnotherActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        //TODO clean up the temp code
         super.onCreate(savedInstanceState)
         val container = LinearLayout(this)
         val helloWorld = TextView(this)

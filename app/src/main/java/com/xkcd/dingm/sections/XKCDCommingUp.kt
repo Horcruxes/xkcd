@@ -32,22 +32,21 @@ class XKCDCommingUp : ConstraintLayout {
     }
 
     fun setTitle() {
+        //TODO: Move hard coded number to static configs
         this.title!!.setId(Constants.coming_up_title_view_id);
         this.title!!.setText(com.xkcd.dingm.R.string.future)
         this.title!!.setPadding(50,50,50,50)
         this.title!!.textSize = 20.0f
-
-
     }
 
     @SuppressLint("ResourceAsColor")
     fun setAmount() {
+        //TODO: Move hard coded number to static configs
         this.amount!!.setId(Constants.coming_up_amount_view_ie)
         this.amount!!.setTextColor(resources.getColor(R.color.colorTransactionAmount))
         this.amount!!.setText("-$234.45") //TODO: connect with API result
         this.amount!!.setPadding(50,50,50,50)
         this.amount!!.textSize = 20.0f
-
     }
 
     fun adjustPosition() {

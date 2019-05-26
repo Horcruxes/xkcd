@@ -42,6 +42,8 @@ class XKCDFutureTransactionItemView : LinearLayout {
     }
 
     fun setStyle(){
+
+        //TODO: Move hard coded number to static configs
         this.brand_logo!!           .setPadding(50,50,50,5)
 
         this.time_in_future!!       .setPadding(50,5,50,50)

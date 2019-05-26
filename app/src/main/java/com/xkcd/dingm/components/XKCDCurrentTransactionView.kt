@@ -39,6 +39,8 @@ class XKCDCurrentTransactionView : LinearLayout {
     }
 
     fun setStyle(){
+
+        //TODO: Move hard coded number to static configs
         this.brand_logo!!           .setPadding(50,50,50,50)
         this.brand_name!!           .setPadding(50,50,50,50)
         this.brand_name!!           .textSize = 20.0f

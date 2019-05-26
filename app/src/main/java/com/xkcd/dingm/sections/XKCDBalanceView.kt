@@ -38,6 +38,7 @@ class XKCDBalanceView : ConstraintLayout {
     }
 
     fun setTitle() {
+        //TODO: Move hard coded number to static configs
         this.title!!.setId(Constants.balance_title_view_id);
         this.title!!.setText(com.xkcd.dingm.R.string.balance_title)
         this.title!!.setPadding(50,50,50,50)
@@ -45,6 +46,7 @@ class XKCDBalanceView : ConstraintLayout {
     }
 
     fun setAmount() {
+        //TODO: Move hard coded number to static configs
         this.amount!!.setId(Constants.balance_amount_view_id)
         this.amount!!.setTextColor(resources.getColor(R.color.colorTransactionAmount))
         this.amount!!.setText("") //TODO: connect with API result
@@ -54,6 +56,7 @@ class XKCDBalanceView : ConstraintLayout {
 
 
     fun setAverage() {
+        //TODO: Move hard coded number to static configs
         this.average!!.setId(Constants.balance_average_view_id)
         this.average!!.setTextColor(resources.getColor(R.color.colorTransactionAmount))
         this.average!!.setText("") //TODO: connect with API result
